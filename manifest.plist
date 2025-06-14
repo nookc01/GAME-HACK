@@ -1,0 +1,29 @@
+<plist version="1.0">
+<dict>
+<key>items</key>
+<array>
+<dict>
+<key>assets</key>
+<array>
+<dict>
+<key>kind</key>
+<string>software-package</string>
+<key>url</key>
+<string>https://eueu.littlera.in/5c37d252-153e-438b-ad91-c843098d42a6/0.ipa</string>
+</dict>
+</array>
+<key>metadata</key>
+<dict>
+<key>bundle-identifier</key>
+<string>com.garena.game.kgvn124</string>
+<key>bundle-version</key>
+<string>1.58.11379483</string>
+<key>kind</key>
+<string>software</string>
+<key>title</key>
+<string>LQMB v1</string>
+</dict>
+</dict>
+</array>
+</dict>
+</plist>
