@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>EU MOD - Cài đặt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .app-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+    }
+    .app-info {
+      flex-grow: 1;
+    }
+    .app-info h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+    .app-info .sub {
+      color: #666;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .install-button {
+      display: block;
+      margin: 25px auto;
+      background-color: #00c853;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      width: 90%;
+      max-width: 280px;
+    }
+    .install-msg {
+      display: none;
+      margin-top: 20px;
+      color: #333;
+      font-size: 14px;
+      text-align: center;
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 12px;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      animation: pulse 1.5s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.03); }
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .section h3 {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .section ol {
+      padding-left: 20px;
+    }
+    .meta-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #777;
+      margin-top: 25px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="app-header">
+      <img src="IMG_2909.png" alt="App Icon">
+      <div class="app-info">
+        <h1>EU MOD</h1>
+        <div class="sub">EU MOD</div>
+      </div>
+    </div>
+
+    <a id="installBtn" class="install-button" href="itms-services://?action=download-manifest&url=https://cdn.jsdelivr.net/gh/nookc01/GAME-HACK@main/manifest.plist">INSTALL</a>
+
+    <div class="install-msg" id="installMsg">
+      ✅ <strong>Đã cài đặt thành công!</strong><br>
+      ⏳ Vui lòng thoát ra màn hình chính để đợi app tải về.<br><br>
+      ✅ <strong>Installed successfully!</strong><br>
+      ⏳ Please return to Home Screen to wait for the app to finish installing.
+    </div>
+
+    <div class="section">
+      <h3>ENGLISH</h3>
+      <ol>
+        <li>Install the app</li>
+        <li>Go to Settings → General → VPN & Device Management</li>
+        <li>Tap the enterprise certificate name</li>
+        <li>Select Trust</li>
+      </ol>
+
+      <h3>TIẾNG VIỆT</h3>
+      <ol>
+        <li>Cài app</li>
+        <li>Vào Cài đặt → Cài đặt chung → Quản lý VPN & thiết bị</li>
+        <li>Nhấn vào tên chứng chỉ</li>
+        <li>Chọn Tin cậy</li>
+      </ol>
+    </div>
+
+    <div class="meta-info">
+      <div><strong>VERSION</strong><br>V4</div>
+      <div><strong>UPDATED</strong><br>Jun 14, 2025</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('installBtn').addEventListener('click', function () {
+      setTimeout(function () {
+        const msg = document.getElementById('installMsg');
+        msg.style.display = 'block';
+        setTimeout(() => {
+          msg.style.opacity = '1';
+        }, 50);
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
