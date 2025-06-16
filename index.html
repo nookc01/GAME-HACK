@@ -262,14 +262,19 @@ function showInstallAlert() {
   }, 2200);  // sau 2s hiển thị thông báo
 }
 </script><script>
-function showInstallAlert() {
+function startInstall() {
+  const btn = document.getElementById("installBtn");
+  btn.innerHTML = '<span class="spinner-left"></span>ĐANG TẢI...';
+  btn.style.backgroundColor = '#aaa';
+  btn.style.pointerEvents = 'none';
+
   setTimeout(() => {
-    window.location.href = "itms-services://?action=download-manifest&url=https://cdn.jsdelivr.net/gh/nookc01/GAME-HACK@main/manifest.plist";
-  }, 200);
+    window.location.href = 'itms-services://?action=download-manifest&url=https://cdn.jsdelivr.net/gh/nookc01/GAME-HACK@main/manifest.plist';
+  }, 200);  // mở link sau 200ms
 
   setTimeout(() => {
     alert("✅ Đã cài thành công! Vui lòng thoát ra màn hình chính để chờ.\n✅ Installed successfully! Please return to the Home screen and wait.");
-  }, 5200);
+  }, 5200);  // hiển thị thông báo sau 5.2s
 }
 </script></body>
 </html>
