@@ -17,13 +17,13 @@
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>com.ngame.allstar.eu5</string>
+        <string>com.ngame.allstar.eu6</string>
         <key>bundle-version</key>
         <string>1.59.11435354</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
-        <string>EU MENU V5</string>
+        <string>EU MENU V6</string>
       </dict>
     </dict>
   </array>
