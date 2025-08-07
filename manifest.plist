@@ -17,13 +17,13 @@
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>com.ngame.allstar.eu5</string>
+        <string>com.nookc</string>
         <key>bundle-version</key>
         <string>1.59.11435354</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
-        <string>AOV V5</string>
+        <string>AOV V7</string>
       </dict>
     </dict>
   </array>
